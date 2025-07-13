@@ -1,0 +1,58 @@
+# syntax=docker/dockerfile:1.4
+FROM node:22.14.0-alpine AS global-dep
+ENV LANG=C.UTF-8
+RUN npm i --global turbo@2.5.0 sort-json@2.0.1
+WORKDIR /usr/src/app
+
+FROM global-dep AS base
+ARG SERVICE_NAME
+COPY . .
+RUN turbo prune ${SERVICE_NAME} --docker && sort-json out/package-lock.json
+
+FROM global-dep AS install
+COPY --link --from=base /usr/src/app/out/json/ .
+COPY --link --from=base /usr/src/app/out/package-lock.json .
+RUN npm pkg set scripts.prepare="echo no-prepare-script"
+RUN --mount=type=secret,id=npmrc,dst=.npmrc npm ci --workspaces=true
+COPY --link --from=base /usr/src/app/out/full .
+COPY --link --from=base /usr/src/app/.prettierrc .
+COPY --link --from=base /usr/src/app/turbo.json .
+
+FROM install AS lint
+ARG SERVICE_NAME
+RUN turbo run lint-report --filter=${SERVICE_NAME}; echo $? > exitcode
+
+FROM scratch AS lint-results
+ARG SERVICE_NAME
+ARG WORKSPACE_NAME
+COPY --link --from=lint /usr/src/app/${WORKSPACE_NAME}/${SERVICE_NAME}/eslint_report.xml .
+COPY --link --from=lint /usr/src/app/exitcode .
+
+FROM install AS test
+ARG SERVICE_NAME
+RUN CI=TRUE turbo run coverage --filter=${SERVICE_NAME}; echo $? > exitcode
+
+FROM install AS test-results
+ARG SERVICE_NAME
+ARG WORKSPACE_NAME
+RUN ls -la /usr/src/app/${WORKSPACE_NAME}/${SERVICE_NAME}/
+RUN find /usr/src/app -name "test-results.xml" 
+COPY --link --from=test /usr/src/app/${WORKSPACE_NAME}/${SERVICE_NAME}/coverage .
+COPY --link --from=test /usr/src/app/${WORKSPACE_NAME}/${SERVICE_NAME}/test-results.xml ./test-results.xml
+COPY --link --from=test /usr/src/app/exitcode ./exitcode
+
+FROM install AS build
+ARG SERVICE_NAME
+RUN npm run build --filter=${SERVICE_NAME}...
+
+FROM global-dep AS release
+WORKDIR /usr/src/app
+ARG SERVICE_NAME
+ARG WORKSPACE_NAME
+COPY --link --from=build /usr/src/app/${WORKSPACE_NAME}/${SERVICE_NAME}/dist ./${WORKSPACE_NAME}/${SERVICE_NAME}/dist
+COPY --link --from=build /usr/src/app/${WORKSPACE_NAME}/${SERVICE_NAME}/package.json ./${WORKSPACE_NAME}/${SERVICE_NAME}/package.json
+COPY --link --from=build /usr/src/app/package.json package.json
+COPY --link --from=build /usr/src/app/node_modules node_modules
+COPY --link --from=build /usr/src/app/packages* packages
+ENV SERVICE_NAME ${SERVICE_NAME}
+ENTRYPOINT ["/bin/sh", "-c", "cd ${WORKSPACE_NAME}/${SERVICE_NAME} && node dist/main.js"]

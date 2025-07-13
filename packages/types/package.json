@@ -1,0 +1,29 @@
+{
+  "name": "@sikur/types",
+  "version": "1.0.0",
+  "description": "This package provides TypeScript types for Sikur's applications.",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "lint-dry": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "lint-report": "eslint \"{src,apps,libs,test}/**/*.ts\" -f checkstyle -o eslint_report.xml"
+  },
+  "devDependencies": {
+    "@ultra/eslint-config": "^1.3.6",
+    "@ultra/typescript-config": "^1.1.0",
+    "eslint-formatter-checkstyle": "^8.40.0",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@sikur/enums": "*"
+  }
+}

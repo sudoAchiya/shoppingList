@@ -1,0 +1,36 @@
+# syntax=docker/dockerfile:1.4
+FROM node:22.14.0-alpine AS global-dep
+ENV LANG=C.UTF-8
+RUN npm i --global turbo@2.5.0 sort-json@2.0.1
+WORKDIR /usr/src/app
+
+FROM global-dep AS base
+ARG PACKAGE_NAME
+COPY . .
+RUN turbo prune @sikur/${PACKAGE_NAME} --docker && sort-json out/package-lock.json
+
+FROM global-dep AS install
+COPY --link --from=base /usr/src/app/out/json/ .
+COPY --link --from=base /usr/src/app/out/package-lock.json .
+RUN npm pkg set scripts.prepare="echo no-prepare-script"
+RUN --mount=type=secret,id=npmrc,dst=.npmrc npm ci --workspaces=true
+COPY --link --from=base /usr/src/app/out/full .
+COPY --link --from=base /usr/src/app/.prettierrc .
+COPY --link --from=base /usr/src/app/turbo.json .
+
+FROM install AS lint
+ARG PACKAGE_NAME
+RUN turbo run lint-report --filter=@sikur/${PACKAGE_NAME}; echo $? > exitcode
+
+FROM scratch AS lint-results
+ARG PACKAGE_NAME
+COPY --link --from=lint /usr/src/app/packages/${PACKAGE_NAME}/eslint_report.xml .
+COPY --link --from=lint /usr/src/app/exitcode .
+
+FROM install AS build
+ARG PACKAGE_NAME
+RUN npm run build --filter=@sikur/${PACKAGE_NAME}...
+
+FROM scratch AS build-results
+ARG PACKAGE_NAME
+COPY --link --from=build /usr/src/app/packages/${PACKAGE_NAME} packages/${PACKAGE_NAME}

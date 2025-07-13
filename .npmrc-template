@@ -1,0 +1,6 @@
+@ultra:registry=https://ultra-831926610422.d.codeartifact.eu-west-1.amazonaws.com/npm/ultra/
+registry=https://registry.npmjs.com
+
+always-auth=true
+
+//ultra-831926610422.d.codeartifact.eu-west-1.amazonaws.com/npm/ultra/:_authToken=AUTH_TOKEN

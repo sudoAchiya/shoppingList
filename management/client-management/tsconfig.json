@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@ultra/typescript-config/tsconfig-client.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules", "dist", "eslint.config.ts"],
+  "include": ["src"]
+}

@@ -1,0 +1,3 @@
+@Library('ultra-lib@1.3.2') _
+
+pipelineStorybook([:])

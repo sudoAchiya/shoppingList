@@ -1,0 +1,845 @@
+{
+  "formId": 50006,
+  "personalIdentifier": "s1111111",
+  "lastVisitedSectionIndex": 0,
+  "workId": 2514,
+  "exportedAt": "2025-07-07T13:00:00Z",
+  "object": {
+    "id": 5,
+    "formTypeId": 101,
+    "organizationId": "ORG-IDF",
+    "startSection": 205,
+    "year": 2025,
+    "title": "משוב ארגוני לרמת טייסת/ענף/יחידה",
+    "createdAt": "2025-07-07T13:00:00Z",
+    "updatedAt": "2025-07-07T13:00:00Z",
+    "formType": {
+      "id": 101,
+      "name": "משוב ארגוני לרמת טייסת/ענף/יחידה"
+    },
+    "sections": [
+      {
+        "id": 205,
+        "index": 0,
+        "formId": 5,
+        "header": "משוב ארגוני לרמת טייסת/ענף/יחידה",
+        "parts": [
+          {
+            "id": 305,
+            "index": 1,
+            "sectionId": 205,
+            "header": "אנא ציין את הערכתך לנושאים הבאים:",
+            "subheader": "",
+            "partQuestions": [
+              {
+                "index": "1",
+                "questionId": 5001,
+                "partId": 305,
+                "question": {
+                  "id": 5001,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionToQuestionDomains": [],
+                  "questionContents": [
+                    {
+                      "content": "אני מרגיש/ה משמעותי/ת בתפקידי/ביחידה",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "2",
+                "questionId": 5002,
+                "partId": 305,
+                "question": {
+                  "id": 5002,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "אני מאמין/ה ביכולות של אנשי הצוות/הענף/היחידה להתגבר על אירועים מאתגרים",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "3",
+                "questionId": 5003,
+                "partId": 305,
+                "question": {
+                  "id": 5003,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "אני מתפקד/ת טוב תחת לחץ",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "4",
+                "questionId": 5004,
+                "partId": 305,
+                "question": {
+                  "id": 5004,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "אני מרגיש/ה בטוח להביע את דעתי בחופשיות",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "5",
+                "questionId": 5005,
+                "partId": 305,
+                "question": {
+                  "id": 5005,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "אני מרוצה מרמת התפקוד שלי במלחמה",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "6",
+                "questionId": 5006,
+                "partId": 305,
+                "question": {
+                  "id": 5006,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "אני מצליח/ה לאזן בין דרישות המלחמה והתפקיד לצרכים האישיים (בית, משפחה וכו')",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+
+              {
+                "index": "7",
+                "questionId": 5007,
+                "partId": 305,
+                "question": {
+                  "id": 5007,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "רמת המוכנות האישית שלי למלחמה הבאה",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "8",
+                "questionId": 5008,
+                "partId": 305,
+                "question": {
+                  "id": 5008,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "ברור לי מהו תפקידי במלחמה",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "9",
+                "questionId": 5009,
+                "partId": 305,
+                "question": {
+                  "id": 5009,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "אני מודרך עם ערכי צה\"ל במלחמה",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "10",
+                "questionId": 5010,
+                "partId": 305,
+                "question": {
+                  "id": 5010,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "שביעות רצון מהכשרתי ע\"י צה\"ל למלחמה עד כה",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "11",
+                "questionId": 5011,
+                "partId": 305,
+                "question": {
+                  "id": 5011,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "שביעות רצון מהכשרתי ע\"י צה\"ל למלחמה עד כה (בתר\"ח)",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "12",
+                "questionId": 5012,
+                "partId": 305,
+                "question": {
+                  "id": 5012,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "החיילים והמובילים בי' עידוד למלחמה והתחייבות לביצועיה של צה\"ל",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "13",
+                "questionId": 5013,
+                "partId": 305,
+                "question": {
+                  "id": 5013,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "אני מרגיש/ה שייך/ת לתפקיד/לענף/ליחידה",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "14",
+                "questionId": 5014,
+                "partId": 305,
+                "question": {
+                  "id": 5014,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "מידת ההשפעה שלי בתפקיד/בענף/ביחידה",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "15",
+                "questionId": 5015,
+                "partId": 305,
+                "question": {
+                  "id": 5015,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "שביעות רצון מהטיפול באנשים בתפקיד/בענף/ביחידה",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "16",
+                "questionId": 5016,
+                "partId": 305,
+                "question": {
+                  "id": 5016,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "המידה בה התפקיד שלי מעניין כי כאדם",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 206,
+        "index": 1,
+        "header": "סיכום",
+        "formId": 5,
+        "parts": [
+          {
+            "id": 306,
+            "index": 1,
+            "sectionId": 206,
+            "header": "באופן כללי מהי רמת תפקוד החטיבה/הענף/היחידה שלך?",
+            "subheader": "",
+            "partQuestions": [
+              {
+                "index": "1",
+                "questionId": 5063,
+                "partId": 306,
+                "question": {
+                  "id": 5063,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "באופן כללי מהי רמת תפקוד החטיבה/הענף/היחידה שלך?",
+                      "scaleOptions": [
+                        { "value": 1, "label": "נמוכה מאוד" },
+                        { "value": 2, "label": "נמוכה" },
+                        { "value": 3, "label": "די נמוכה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די גבוהה" },
+                        { "value": 6, "label": "גבוהה" },
+                        { "value": 7, "label": "גבוהה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "2",
+                "questionId": 5064,
+                "partId": 306,
+                "question": {
+                  "id": 5064,
+                  "questionTypeId": 507,
+                  "questionType": {
+                    "id": 507,
+                    "type": "KeepImprove",
+                    "description": "שני נושאים לשימור ולשיפור"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "שני נושאים שמטופלים היטב בחטיבה/בענף/ביחידה:",
+                      "keepLabel": "שמירה על נושאים חזקים",
+                      "improveLabel": "שיפור נושאים חלשים"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 209,
+        "index": 8,
+        "formId": 5,
+        "header": "הערכה של רמת תפקוד הבסיס בחירום",
+        "parts": [
+          {
+            "id": 309,
+            "index": 1,
+            "sectionId": 209,
+            "header": "מהי רמת תפקוד הבסיס בהיבטים הבאים:",
+            "partQuestions": [
+              {
+                "index": "1",
+                "questionId": 5096,
+                "partId": 309,
+                "question": {
+                  "id": 5096,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "המענה התחזוקתי של הבסיס בחירום",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "2",
+                "questionId": 5097,
+                "partId": 309,
+                "question": {
+                  "id": 5097,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "המענה הניהולי של הבסיס בחירום",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "3",
+                "questionId": 5098,
+                "partId": 309,
+                "question": {
+                  "id": 5098,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "המענה ברמת תפוקת של הבסיס בחירום",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "index": "4",
+                "questionId": 5099,
+                "partId": 309,
+                "question": {
+                  "id": 5099,
+                  "questionTypeId": 503,
+                  "questionType": {
+                    "id": 503,
+                    "type": "Scale",
+                    "description": "שאלת דירוג"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "המענה ברמת בינוי של הבסיס בחירום",
+                      "scaleOptions": [
+                        { "value": 1, "label": "מועטה מאוד" },
+                        { "value": 2, "label": "מועטה" },
+                        { "value": 3, "label": "די מועטה" },
+                        { "value": 4, "label": "בינונית" },
+                        { "value": 5, "label": "די רבה" },
+                        { "value": 6, "label": "רבה" },
+                        { "value": 7, "label": "רבה מאוד" }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 210,
+        "index": 9,
+        "header": "נושאים לשימור ולשיפור ברמת הבסיס",
+        "formId": 5,
+        "parts": [
+          {
+            "id": 310,
+            "index": 1,
+            "sectionId": 210,
+            "header": "נושאים לשימור ולשיפור ברמת הבסיס",
+            "subheader": "",
+            "partQuestions": [
+              {
+                "index": "1",
+                "questionId": 5100,
+                "partId": 310,
+                "question": {
+                  "id": 5100,
+                  "questionTypeId": 507,
+                  "questionType": {
+                    "id": 507,
+                    "type": "KeepImprove",
+                    "description": "שני נושאים לשימור ולשיפור"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "נושאים לשימור ולשיפור ברמת הבסיס",
+                      "keepLabel": "נושאים לשימור",
+                      "improveLabel": "נושאים לשיפור"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 212,
+        "index": 11,
+        "header": "הסבר/י את הערכתך ופרט/י הצעות לשיפור בתחום זה",
+        "formId": 5,
+        "parts": [
+          {
+            "id": 312,
+            "index": 1,
+            "sectionId": 212,
+            "header": "הסבר/י את הערכתך ופרט/י הצעות לשיפור בתחום זה",
+            "subheader": "",
+            "partQuestions": [
+              {
+                "index": "1",
+                "questionId": 5120,
+                "partId": 312,
+                "question": {
+                  "id": 5120,
+                  "questionTypeId": 501,
+                  "questionType": {
+                    "id": 501,
+                    "type": "FreeText",
+                    "description": "שדה טקסט חופשי"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "id": 6120,
+                      "questionId": 5120,
+                      "createdAt": "2025-07-07T00:00:00Z",
+                      "version": 1,
+                      "maxEntries": 1,
+                      "content": "הסבר/י את הערכתך ופרט/י הצעות לשיפור בתחום זה"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 213,
+        "index": 12,
+        "header": "נכונות להמשך שירות בחיל האוויר",
+        "formId": 5,
+        "parts": [
+          {
+            "id": 313,
+            "index": 1,
+            "sectionId": 213,
+            "header": "נכונות להמשך שירות בחיל האוויר",
+            "subheader": "",
+            "partQuestions": [
+              {
+                "index": "1",
+                "questionId": 5130,
+                "partId": 313,
+                "question": {
+                  "id": 5130,
+                  "questionTypeId": 502,
+                  "questionType": {
+                    "id": 502,
+                    "type": "MultiChoice",
+                    "description": "בחירה מרובה"
+                  },
+                  "answers": [],
+                  "questionContents": [
+                    {
+                      "content": "לו עמדת כעת בפני החלטה לגבי עתידך בחה\"א, באיזו אפשרות היית בוחר/ת?",
+                      "choices": [
+                        {
+                          "value": "a",
+                          "label": "להמשיך לשרת מעבר לתקופת השירות המחייבת"
+                        },
+                        {
+                          "value": "b",
+                          "label": "דעתי אינה מגובשת עדיין, אך אני נוטה להמשיך לשרת"
+                        },
+                        {
+                          "value": "c",
+                          "label": "דעתי אינה מגובשת עדיין, אך אני נוטה להשתחרר"
+                        },
+                        {
+                          "value": "d",
+                          "label": "להשתחרר עם תום או לפני ההתחייבות המחייבת"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "createdAt": "2025-07-07T13:00:00Z",
+  "updateAt": "2025-07-07T13:00:00Z",
+  "status": "in_progress"
+}

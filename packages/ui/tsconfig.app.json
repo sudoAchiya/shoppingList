@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": ["src", ".storybook", "lib", "vitest.setup.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test",
+    "**/*spec.ts",
+    "eslint.config.ts"
+  ],
+  "extends": "@ultra/typescript-config/tsconfig-client.json",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "@/*": ["lib/*"],
+      "@src/*": ["src/*"]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+**/.scannerwork
+docker-config/
+node_modules/
+pat
+.npmrc*

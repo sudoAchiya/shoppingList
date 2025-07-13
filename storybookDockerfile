@@ -1,0 +1,28 @@
+# syntax=docker/dockerfile:1.4
+FROM node:22.14.0-alpine AS global-dep
+ENV LANG=C.UTF-8
+RUN npm i --global turbo@2.5.0 sort-json@2.0.1
+WORKDIR /usr/src/app
+
+FROM global-dep AS base
+ARG SERVICE_NAME
+COPY . .
+RUN turbo prune ${SERVICE_NAME} --docker && sort-json out/package-lock.json
+
+FROM global-dep AS install
+COPY --link --from=base /usr/src/app/out/json/ .
+COPY --link --from=base /usr/src/app/out/package-lock.json .
+RUN npm pkg set scripts.prepare="echo no-prepare-script"
+RUN --mount=type=secret,id=npmrc,dst=.npmrc npm ci --workspaces=true
+COPY --link --from=base /usr/src/app/out/full .
+COPY --link --from=base /usr/src/app/.prettierrc .
+COPY --link --from=base /usr/src/app/turbo.json .
+
+FROM install AS storybook
+ARG SERVICE_NAME
+RUN npm run build --filter=${SERVICE_NAME}...
+RUN npm run storybook-build --workspace ${SERVICE_NAME}
+
+FROM scratch AS export
+ARG SERVICE_PATH
+COPY --from=storybook /usr/src/app/${SERVICE_PATH}/storybook-static/ /storybook-static

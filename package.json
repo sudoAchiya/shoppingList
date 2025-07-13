@@ -1,0 +1,42 @@
+{
+  "name": "sikur",
+  "version": "1.0.0",
+  "description": "Sikur's monorepo",
+  "homepage": "https://github.com/ClickIDF/sikur#readme",
+  "bugs": {
+    "url": "https://github.com/ClickIDF/sikur/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClickIDF/sikur.git"
+  },
+  "license": "ISC",
+  "author": "Mus team",
+  "workspaces": [
+    "forms/*",
+    "management/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "storybook-build": "turbo run storybook-build",
+    "test": "turbo run test",
+    "dev": "turbo run dev",
+    "coverage": "turbo run coverage",
+    "lint": "turbo run lint",
+    "lint-dry": "turbo run lint-dry",
+    "lint-report": "turbo run lint-report",
+    "env:fetch": "env-fetch dev/sikur-forms eu-west-1 .env.forms && env-fetch dev/sikur-management eu-west-1 .env.management",
+    "env:add": "env-add dev/sikur-forms eu-west-1 .env.forms && env-add dev/sikur-management eu-west-1 .env.management",
+    "codeartifact-login": "aws codeartifact login --tool npm --repository ultra --domain ultra --domain-owner 831926610422 --region eu-west-1"
+  },
+  "packageManager": "npm@10.9.2",
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@ultra/env-fetcher": "^1.1.1",
+    "ts-node": "^10.9.2",
+    "turbo": "^2.5.3"
+  }
+}

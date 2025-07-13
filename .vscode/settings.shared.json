@@ -1,5 +1,0 @@
-{
-  "eslint.workingDirectories": [{ "mode": "auto" }],
-  "eslint.validate": ["javascript", "typescript"],
-  "eslint.quiet": true
-}

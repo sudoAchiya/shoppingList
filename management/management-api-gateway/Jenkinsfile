@@ -1,8 +1,0 @@
-@Library('ultra-lib@1.3.1') _
-
-pipelineService(
-  helm: [ subChartName: 'apiGateway', ],
-  images: [
-    [name: 'management-api-gateway', extraBuildArgs: "WORKSPACE_NAME=management", filename: 'serverDockerfile']
-  ],
-)
